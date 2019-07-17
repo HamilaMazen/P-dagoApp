@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cours"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Cours" />
+        <item
+            android:id="@+id/nav_absense"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Absence" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Paramètres" />
+    </group>
+
+    <item android:title="Communications">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Chat" />
+            <item
+                android:id="@+id/nav_deconex"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+
+</menu>

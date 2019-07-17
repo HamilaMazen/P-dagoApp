@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_ground"
+    tools:context="exemple.aaa.projectm.Page2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/login_logo"
+        android:src="@drawable/login_logo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/login_logo"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pour Commencer"
+                android:textColor="@color/white"
+                android:shadowColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petites detailles avant de commencer"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/userText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Mot de passe"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/pass"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:inputType="textPassword"
+                android:id="@+id/passwordtext"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vous êtes un:"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:text="Enseignant"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Etudiant"
+                        android:textColor="@color/white" />
+
+                </RadioGroup>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|bottom"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints"
+                                                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ravis que vous serez parmis nous"
+        android:textColor="@color/white"
+        android:layout_below="@+id/scrollView"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+
+</RelativeLayout>

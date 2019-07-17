@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="jaune">#f8d10d</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#61ff0c</color>
+    <color name="colorAccent">#01ce00</color>
+    <color name="white">#ffff</color>
+    <color name="trans">#80ffffff</color>
+    <color name="baw">#fcfcfc</color>
+    <color name="green">#14C90C</color>
+
+</resources>
